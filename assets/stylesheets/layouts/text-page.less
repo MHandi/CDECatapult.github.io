@@ -1,0 +1,54 @@
+.text-page-template {
+  h2 {
+    .font-dosis();
+    color: @teal_green;
+    text-align: left;
+    font-size: 42px;
+    margin-top: 0px;
+  }
+  
+  h3 {
+    .font-montserrat();
+    margin: 40px 0 10px 0;
+    color: #076d7c;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+    a {
+      color: @orange;
+      text-decoration: underline;
+    }
+    
+    &.lead {
+      .font-montserrat();
+      font-size: 22px;
+    }
+  }
+  
+  ul {
+    li {
+      font-size: 18px;
+      
+      ul {
+        padding: 0;
+        
+        li {
+          list-style:none;
+          
+          &:before {
+            margin-right: 10px;
+            color: #CC3333;
+            content:"\2022";
+            font-size: 25px;
+            top: 2px;
+          }
+        }
+      }
+    }
+  }
+}

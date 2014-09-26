@@ -1,0 +1,82 @@
+.homepage-boxes {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  
+  a.homepage-box {
+    padding: 10px;
+    
+    &:hover {
+      text-decoration: none;
+    }
+    
+    .inner {
+      background: #ecfdff;
+      min-height: 220px;
+      box-shadow: 5px 5px #58acbe;
+      text-decoration: none;
+      margin: 0 10px 30px 10px;
+      
+      .icon {
+        width: 83px;
+        height: 83px;
+        margin: 0 auto 0 auto;
+        position: relative;
+        top: -30px;
+        background-size: cover !important;
+        
+        &.chat {
+          background: url(/assets/images/circle-chat.png) no-repeat center center;
+        }
+        
+        &.lightbulb {
+          background: url(/assets/images/circle-lightbulb.png) no-repeat center center;
+        }
+        
+        &.chart {
+          background: url(/assets/images/circle-graph.png) no-repeat center center;
+        }
+      }
+      
+      h3 {
+        .font-montserrat();
+        color: @orange;
+        text-decoration: underline;
+        text-align: center;
+        font-size: 14px;
+        margin-top: -10px;
+        text-transform: uppercase;
+      }
+      
+      p {
+        .font-dosis();
+        color: #272727;
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 300;
+      }
+    }
+    
+    &:last-child .inner {
+      margin-bottom: -30px;
+    }
+  }
+}
+
+.homepage-whowhathow-block a {
+  color: #fff;
+}
+
+
+// Non-retina fixes for IE7/8:
+html.lt-ie9 .homepage-boxes a.homepage-box .inner {
+  .icon.chat {
+    background: url(/assets/images/non-retina/circle-chat.png) no-repeat center center;
+  }
+  .icon.lightbulb {
+    background: url(/assets/images/non-retina/circle-lightbulb.png) no-repeat center center;
+  }
+  .icon.chart {
+    background: url(/assets/images/non-retina/circle-graph.png) no-repeat center center;
+  }
+}

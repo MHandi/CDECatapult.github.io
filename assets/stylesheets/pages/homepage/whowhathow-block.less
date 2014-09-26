@@ -1,0 +1,64 @@
+.block.homepage-whowhathow-block {
+  background: #399e85;
+  // border-left: 9px solid #35937c;
+  min-height: 369px;
+  
+  h2 {
+    .font-montserrat();
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 4px 4px 0 #32917e;
+    margin: 40px 0 0 0;
+    font-size: 40px;
+  }
+  
+  h3 {
+    .font-dosis();
+    color: #fff;
+    font-weight: 200;
+    font-size: 36px;
+    margin-top: 50px;
+    padding-left: 120px;
+  }
+  
+  p {
+    padding-left: 120px;
+    min-height: 128px;
+    color: #0b3129;
+    font-size: 16px;
+  }
+  
+  .column {
+    margin-bottom: 50px;
+    
+    &.who p {
+      background: url(/assets/images/uk.png) no-repeat 0px 0px;
+    }
+    
+    &.what p {
+      background: url(/assets/images/graph-icon.png) no-repeat 0px 10px;
+      background-size: 106px 92px;
+    }
+    
+    &.how p {
+      background: url(/assets/images/arrows.png) no-repeat 0px 0px;
+      background-size: 89px 102px;
+    }
+  }
+}
+
+
+html.lt-ie9 .block.homepage-whowhathow-block .column {
+  &.who p {
+    background: url(/assets/images/non-retina/uk.png) no-repeat 0px 0px;
+  }
+  
+  &.what p {
+    background: url(/assets/images/non-retina/graph-icon.png) no-repeat 0px 10px;
+  }
+  
+  &.how p {
+    background: url(/assets/images/non-retina/arrows.png) no-repeat 0px 0px;
+  }
+}

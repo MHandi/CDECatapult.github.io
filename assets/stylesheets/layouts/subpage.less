@@ -1,0 +1,60 @@
+.subpage-layout {
+  min-height: 74px * 2;
+  
+  .title {
+    text-align: center;
+    padding: 50px 0 20px 0;
+    
+    .icon {
+      width: 82px;
+      height: 82px;
+    }
+    
+    h1 {
+      .font-montserrat();
+      display: block;
+      color: #076d7c;
+      text-transform: uppercase;
+      font-size: 25px;
+      margin: 30px 0 10px 0;
+    }
+  }
+  
+  @import "subpage/subpage-boxes";
+  @import "subpage/contact-team";
+}
+
+html.lt-ie9 .subpage-boxes .box {
+  &.resources a .image {
+    background: url(/assets/images/non-retina/circle-graph.png) center center no-repeat !important;
+  }
+  
+  &.raw-data a .image {
+    background: url(/assets/images/non-retina/circle-script.png) center center no-repeat !important;
+  }
+  
+  &.api a .image {
+    background: url(/assets/images/non-retina/circle-browser.png) center center no-repeat !important;
+  }
+}
+
+@media (min-width: 700px) {
+  .subpage-layout {
+    .title {
+      text-align: left;
+      
+      .icon {
+        float: left;
+      }
+      
+      h1 {
+        float: left;
+        margin: 25px 0 0 20px;
+      }
+    }
+    
+    .contact-the-team p.email {
+      font-size: 22px;
+    }
+  }
+}

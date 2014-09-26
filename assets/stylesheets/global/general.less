@@ -1,0 +1,36 @@
+@orange: #e05c48;
+@teal_green: #3e9e89;
+
+.font-dosis {
+  font-family: 'Dosis', sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-sourcesans {
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  .font-sourcesans();
+  background: #fff;
+}
+
+html.showheader .page-content {
+  background: url(/assets/images/grad-top.png) repeat-x #fff;
+  min-height: 100px;
+}
+
+p.lead {
+  .font-montserrat();
+}
+
+@media (max-width: 700px) {
+  p.lead {
+    text-align: center;
+  }
+}
